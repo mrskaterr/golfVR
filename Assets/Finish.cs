@@ -17,6 +17,7 @@ public class Finish : MonoBehaviour
 
             PlayerPrefs.SetInt(PlayerPrefs.GetString("CurrentPlayer") + PlayerPrefs.GetInt("CurrentLevel").ToString(), ball.GetComponent<Ball>().GetPoint());
         }
+        PlayerPrefs.Save(); 
         Debug.Log(PlayerPrefs.GetInt(PlayerPrefs.GetString("CurrentPlayer") + PlayerPrefs.GetInt("CurrentLevel").ToString()));
     }    
     private void OnCollisionEnter(Collision collision)

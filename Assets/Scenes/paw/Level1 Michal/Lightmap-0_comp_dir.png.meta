@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a75151b08c041ac4ab9b79b725a654b0
+=======
+guid: 3d86f3a9b7f936345929981076b161ff
+>>>>>>> origin/michalek
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -7,7 +11,11 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
+<<<<<<< HEAD
     sRGBTexture: 1
+=======
+    sRGBTexture: 0
+>>>>>>> origin/michalek
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -22,7 +30,11 @@ TextureImporter:
     normalMapFilter: 0
     flipGreenChannel: 0
   isReadable: 0
+<<<<<<< HEAD
   streamingMipmaps: 0
+=======
+  streamingMipmaps: 1
+>>>>>>> origin/michalek
   streamingMipmapsPriority: 0
   vTOnly: 0
   ignoreMipmapLimit: 0
@@ -35,11 +47,19 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 1
+<<<<<<< HEAD
     aniso: 1
     mipBias: 0
     wrapU: 0
     wrapV: 0
     wrapW: 0
+=======
+    aniso: 3
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+>>>>>>> origin/michalek
   nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
@@ -54,7 +74,11 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
+<<<<<<< HEAD
   textureType: 0
+=======
+  textureType: 12
+>>>>>>> origin/michalek
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -72,7 +96,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 1
+=======
+    textureCompression: 0
+>>>>>>> origin/michalek
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0

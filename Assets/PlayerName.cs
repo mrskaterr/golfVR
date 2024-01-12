@@ -27,7 +27,7 @@ public class PlayerName : MonoBehaviour
         Players.RemoveAt(Players.Count-1);
 
         Debug.Log(PlayerPrefs.GetString("Names"));
-        //PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteAll();
 
     }
     public void Enter()
@@ -40,9 +40,10 @@ public class PlayerName : MonoBehaviour
             {
                 PlayerPrefs.SetString("CurrentPlayer", label.text);
                 Debug.Log("juz isnieje");
-                PlayerPrefs.SetInt("CurrentLevel", 1);
+                PlayerPrefs.SetInt("CurrentLevel", 0);
                 this.gameObject.gameObject.SetActive(false);
                 Ranking.SetActive(true) ;
+                PlayerPrefs.Save();
                 return;
             }
         }
@@ -59,6 +60,7 @@ public class PlayerName : MonoBehaviour
 
         gameObject.gameObject.SetActive(false);
         Ranking.SetActive(true);
+        PlayerPrefs.Save();
 
     }
 }

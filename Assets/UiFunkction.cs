@@ -14,6 +14,7 @@ public class UiFunkction : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex + 1 <= SceneManager.loadedSceneCount)
         {
             PlayerPrefs.SetInt("CurrentLevel", PlayerPrefs.GetInt("CurrentLevel")+1);
+            PlayerPrefs.Save();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
             
