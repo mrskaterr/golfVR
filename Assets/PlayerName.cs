@@ -7,18 +7,27 @@ public class PlayerName : MonoBehaviour
 {
     List <string> Players;
     [SerializeField] Text label;
+    [SerializeField] GameObject Ranking;
     int levelCount = 5; 
     private void Awake()
     {
-        //PlayerPrefs.DeleteAll();
+        
 
         Players = new List<string>();
-
-        foreach (string player in PlayerPrefs.GetString("Names").Split(';'))
+        if (PlayerPrefs.GetString("Names").Length==0)
         {
+            Debug.Log("nima");
+            return;
+        }
+        foreach (string player in PlayerPrefs.GetString("Names").Split(';'))
+        {   
+                
                 Players.Add(player);
         }
+        Players.RemoveAt(Players.Count-1);
+
         Debug.Log(PlayerPrefs.GetString("Names"));
+        //PlayerPrefs.DeleteAll();
 
     }
     public void Enter()
@@ -31,7 +40,9 @@ public class PlayerName : MonoBehaviour
             {
                 PlayerPrefs.SetString("CurrentPlayer", label.text);
                 Debug.Log("juz isnieje");
+                PlayerPrefs.SetInt("CurrentLevel", 1);
                 this.gameObject.gameObject.SetActive(false);
+                Ranking.SetActive(true) ;
                 return;
             }
         }
@@ -46,6 +57,8 @@ public class PlayerName : MonoBehaviour
             PlayerPrefs.SetInt(label.text + i, 0);
         }
 
-        this.gameObject.gameObject.SetActive(false);
+        gameObject.gameObject.SetActive(false);
+        Ranking.SetActive(true);
+
     }
 }
