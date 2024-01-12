@@ -12,7 +12,12 @@ public class UiFunkction : MonoBehaviour
     public void LoadNextLevel()
     {
         if(SceneManager.GetActiveScene().buildIndex + 1 <= SceneManager.loadedSceneCount)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1  );
+        {
+            PlayerPrefs.SetInt("CurrentLevel", PlayerPrefs.GetInt("CurrentLevel")+1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+            
+
     }
 
 }

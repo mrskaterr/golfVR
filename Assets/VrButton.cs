@@ -10,10 +10,19 @@ public class VrButton : MonoBehaviour
 
     public void addLetter()
     {
+
         if (label.text == "_________")
             label.text = "";
         label.text += letters.text;
     }
+    public void deleteLetter()
+    {
+        Debug.Log(PlayerPrefs.GetString("Names"));
+        if (label.text == "_________")
+            label.text = "";
+        Debug.Log(label.text[label.text.Length - 1]);
+    }
+
 
 
 

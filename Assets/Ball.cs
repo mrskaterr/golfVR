@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Points : MonoBehaviour
+public class Ball : MonoBehaviour
 {
     [SerializeField] Text hitsBallText;
     [SerializeField] Text PointsText;
-    [SerializeField] int currentPoints=10;
+    [SerializeField] int currentPoints;
     [SerializeField] GameObject stick;
     private int hitsBall=0;
 
@@ -24,8 +24,14 @@ public class Points : MonoBehaviour
         if (hitsBall > 1 && currentPoints > 1 )
         {
             currentPoints--;
+            PointsText.text = currentPoints.ToString();
         }
         hitsBallText.text=hitsBall.ToString();
-        PointsText.text=currentPoints.ToString();
+
+    }
+    public int GetPoint()
+    {
+        PointsText.text = currentPoints.ToString();
+        return currentPoints;
     }
 }
