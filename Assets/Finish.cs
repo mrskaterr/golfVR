@@ -11,7 +11,7 @@ public class Finish : MonoBehaviour
     
     private void Evets()
     {
-        evets.Invoke();
+
         if (PlayerPrefs.GetInt(PlayerPrefs.GetString("CurrentPlayer") + PlayerPrefs.GetInt("CurrentLevel").ToString()) < ball.GetComponent<Ball>().GetPoint())
         {
 
@@ -19,6 +19,7 @@ public class Finish : MonoBehaviour
         }
         PlayerPrefs.Save(); 
         Debug.Log(PlayerPrefs.GetInt(PlayerPrefs.GetString("CurrentPlayer") + PlayerPrefs.GetInt("CurrentLevel").ToString()));
+        evets.Invoke();
     }    
     private void OnCollisionEnter(Collision collision)
     {

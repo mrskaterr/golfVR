@@ -27,7 +27,7 @@ public class PlayerName : MonoBehaviour
         Players.RemoveAt(Players.Count-1);
 
         Debug.Log(PlayerPrefs.GetString("Names"));
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
 
     }
     public void Enter()

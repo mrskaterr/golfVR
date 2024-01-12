@@ -488,6 +488,156 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1498850335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1498850336}
+  - component: {fileID: 1498850341}
+  - component: {fileID: 1498850340}
+  - component: {fileID: 1498850339}
+  - component: {fileID: 1498850338}
+  - component: {fileID: 1498850337}
+  m_Layer: 0
+  m_Name: Ball
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1498850336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498850335}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0059756925, y: 0.0033251336, z: 0.0027551386, w: 0.9999728}
+  m_LocalPosition: {x: 15.986, y: 2.802, z: -2.668}
+  m_LocalScale: {x: 0.15144229, y: 0.15144227, z: 0.15144226}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5018560346207581540}
+  m_LocalEulerAnglesHint: {x: 0.684, y: 0.383, z: 0.318}
+--- !u!114 &1498850337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498850335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef31d6f84e6be0e4fa5338a6361dcd5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitsBallText: {fileID: 4722588362012964322}
+  PointsText: {fileID: 6980072489779859006}
+  currentPoints: 19
+  stick: {fileID: 1549395882517198559}
+--- !u!54 &1498850338
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498850335}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 2
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &1498850339
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498850335}
+  m_Material: {fileID: 13400000, guid: 81b75478358926242a6d4e5c08305d88, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1498850340
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498850335}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: c09b9cdf5d3d1024ba29e0fbc086ee58, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1498850341
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498850335}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &1557368939 stripped
 MeshCollider:
   m_CorrespondingSourceObject: {fileID: 2977574109945025399, guid: f5623871f2aaa024299e948f00a675ad, type: 3}
@@ -1290,7 +1440,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8119382262227633631}
   m_HandleRect: {fileID: 2278386831021756644}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2147,7 +2297,7 @@ RectTransform:
   m_Father: {fileID: 7057640957318564943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2458,7 +2608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitsBallText: {fileID: 4722588362012964322}
   PointsText: {fileID: 6980072489779859006}
-  currentPoints: 8
+  currentPoints: 19
   stick: {fileID: 1549395882517198559}
 --- !u!114 &1093213264391896132
 MonoBehaviour:
@@ -3680,8 +3830,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012809456, y: -0.00030817962}
-  m_SizeDelta: {x: 0, y: 50}
+  m_AnchoredPosition: {x: -0.000875404, y: -0.00030817962}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1747953527366803288
 MonoBehaviour:
@@ -4923,7 +5073,7 @@ RectTransform:
   m_Father: {fileID: 8998940905291605305}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.9999999, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5334,12 +5484,12 @@ GameObject:
   - component: {fileID: 7569162574881836920}
   - component: {fileID: 1075248060735748400}
   m_Layer: 0
-  m_Name: Ball (8)
+  m_Name: tRIGGERBALL
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2566695247109387282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7395,7 +7545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &3582888169887684460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8256,9 +8406,9 @@ RectTransform:
   - {fileID: 7028965552531016745}
   m_Father: {fileID: 2975698072372038373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 475, y: -180}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500.48, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &4080290560154459699
@@ -8445,7 +8595,7 @@ Transform:
   m_GameObject: {fileID: 2563600349042300408}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0059756925, y: 0.0033251336, z: 0.0027551386, w: 0.9999728}
-  m_LocalPosition: {x: 15.682, y: 2.898, z: -2.661}
+  m_LocalPosition: {x: 11.276, y: 2.542, z: -2.668}
   m_LocalScale: {x: 0.15144229, y: 0.15144227, z: 0.15144226}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10651,6 +10801,7 @@ Transform:
   m_Children:
   - {fileID: 2235400110059639068}
   - {fileID: 4199389945004899147}
+  - {fileID: 1498850336}
   - {fileID: 2217976445227459073}
   - {fileID: 247791513989513039}
   - {fileID: 4404568754307805271}
@@ -11275,6 +11426,30 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5419827864125419158}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3082362064140222243}
+        m_TargetAssemblyTypeName: RankingSum, Assembly-CSharp
+        m_MethodName: Refresh
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
