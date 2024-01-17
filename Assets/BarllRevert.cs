@@ -5,7 +5,6 @@ using UnityEngine;
 public class BarllRevert : MonoBehaviour
 {
     Vector3 startPosition;
-    [SerializeField] GameObject testballRAMP;
     [SerializeField] List <Collider> colls;
     [SerializeField] GameObject Stick;
 
@@ -23,7 +22,7 @@ public class BarllRevert : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject==Stick || testballRAMP.gameObject==collision.gameObject)
+        if(collision.gameObject==Stick )
         {
             Debug.Log("To kij lub rampa");
             return;
@@ -32,14 +31,15 @@ public class BarllRevert : MonoBehaviour
         {
             if (collision.gameObject == colls[i].gameObject)
             {
-                Debug.Log("To mapa");
+                transform.position = startPosition;
+                gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                Debug.Log("To nie mapa");
                 return;
             }
         }
-        Debug.Log("To  NIE mapa!");
+        Debug.Log("To  mapa!");
 
-        transform.position = startPosition;
-        gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+       
     }
 
 }
