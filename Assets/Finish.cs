@@ -8,7 +8,8 @@ public class Finish : MonoBehaviour
 {
     [SerializeField] private GameObject ball;
     [SerializeField] private UnityEvent evets;
-    
+    [SerializeField] private AudioSource audio;
+
     private void Evets()
     {
 
@@ -24,6 +25,11 @@ public class Finish : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject == ball)
+        {
+            audio.Play();
             Evets();
+
+        }
+            
     }
 }

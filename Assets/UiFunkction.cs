@@ -20,5 +20,20 @@ public class UiFunkction : MonoBehaviour
             
 
     }
+    public void LoadPreviousLevel()
+    {
+        if (SceneManager.GetActiveScene().buildIndex -1 >= 0)
+        {
+            PlayerPrefs.SetInt("CurrentLevel", PlayerPrefs.GetInt("CurrentLevel") - 1);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+
+
+    }
+    public void Exit()
+    {
+        Application.Quit();
+    }
 
 }

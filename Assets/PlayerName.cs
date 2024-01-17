@@ -8,7 +8,8 @@ public class PlayerName : MonoBehaviour
     List <string> Players;
     [SerializeField] Text label;
     [SerializeField] GameObject Ranking;
-    int levelCount = 5; 
+    int levelCount = 5;
+    [SerializeField] GameObject teleportation;
     private void Awake()
     {
         
@@ -61,6 +62,7 @@ public class PlayerName : MonoBehaviour
         gameObject.gameObject.SetActive(false);
         Ranking.SetActive(true);
         PlayerPrefs.Save();
+        teleportation.SetActive(true);
 
     }
 }
